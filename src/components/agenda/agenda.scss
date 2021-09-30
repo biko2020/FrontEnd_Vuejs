@@ -1,0 +1,124 @@
+.container * {
+    box-sizing: border-box;
+}
+
+.container {
+    //display: flex;
+    flex-wrap:wrap;
+    
+
+
+.semaine {
+    
+    
+    background-color: rgb(241, 241, 240);
+    border: 1px solid #000;
+    
+
+    .jours {
+
+         width:14.28%;
+         padding: 10px;
+         align-content: space-between;
+         display: inline-block;
+         justify-content: space-between;
+        line-height: 45px;
+        text-align: center;
+        background-color: rgb(241, 241, 240);
+        color: #0a0a0a;
+        
+        .span_jour{
+            background-color: rgb(192, 192, 189); 
+            padding: 5px; 
+                        
+        }
+
+
+        .heures {
+            //user-select: none;
+            display: flex;
+            flex-wrap:wrap;
+            padding:2px;
+            color:#2b2e49;
+            line-height: 45px;
+            
+            text-align: center;
+            justify-content: space-around;
+         
+            //background-color: rgba(254, 255, 254, 0.966);
+            .span_heure {
+                color:rgb(18, 54, 4);
+                background: rgb(230, 229, 228);
+                padding: 0.3px 1vw;
+                margin: 0.3px 2px; ;
+                font-size: 3.733333;
+               
+                
+            }
+        }
+    
+    }
+
+    .active {
+        color:red
+
+    }
+  
+
+    .debut_ColorSection {
+        border-top-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
+    .fin_ColorSection {
+        border-top-left-radius: 50%;
+        border-bottom-right-radius: 50%; 
+    }
+}
+
+.checkBoxCard {
+    margin-right: 15px;
+    display: inline-block;
+    margin-top:10px ;
+}
+
+.box {
+    border:0.55px solid #eee;
+    padding: 5px 10px;
+    font-size: 3.73333vw;
+    border-radius: 10px;
+}
+
+.checkBox {
+    padding: 2.33333vw 4vw;
+    border-bottom: 2.55px solid #f3f1f1;
+    background-color: #ea4335;
+}
+.title {
+    text-align: left;
+    color:#d3d3d6;
+    font-size: 3.733333;
+    padding-bottom: 10px;
+    line-height: 30px;
+}
+
+.v-current-time {
+    height: 2px;
+    background-color: #ea4335;
+    position: absolute;
+    left: -1px;
+    right: 0;
+    pointer-events: none;
+  
+    &.first::before {
+      content: '';
+      position: absolute;
+      background-color: #ea4335;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      margin-top: -5px;
+      margin-left: -6.5px;
+    }
+  }
+
+}

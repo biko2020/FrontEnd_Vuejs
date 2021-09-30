@@ -1,23 +1,36 @@
 <template>
-    <div class="block-header">
-        <div class="logo">My Logo</div>
-        <ul id="nav">
-            <router-link to="/" tag="li">
-                <a>Home</a>
-            </router-link> |
-            <router-link to="/about" tag="li">
-                <a>About</a>
-            </router-link> |
-            <router-link to="/help" tag="li" replace>
-                <a>Help</a>
-            </router-link> |
+ <nav>
+    <v-toolbar>
+<v-app-bar-nav-icon></v-app-bar-nav-icon>
 
-            <router-link to="/calandrier" tag="li">
-                <a>Calandrier</a>
-            </router-link>
-        </ul>
-    </div>
+      <v-toolbar-title>Askoach</v-toolbar-title>
+
+      <v-spacer></v-spacer>
+
+      <v-btn>
+       <span>
+           <router-link to="/" > <a>Je Koach</a></router-link> |
+       </span>
+      </v-btn>
+      <v-btn>
+          <span>
+        <router-link to="/about" > <a>Mon Cpmpte</a> </router-link> |
+          </span>
+      </v-btn>
+      <v-btn>
+          <span>
+        <router-link to="/appagenda"> <a>Calandrier</a> </router-link>
+          </span>
+      </v-btn>
+        <v-spacer></v-spacer>
+        
+       
+
+
+    </v-toolbar>
+ </nav>
 </template>
+
 
 <script>
 
